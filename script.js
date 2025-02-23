@@ -84,7 +84,7 @@ function updateKm() {
 
             previousPosition = currentPosition;
 
-            document.getElementById("km").textContent = `${totalDistance.toFixed(1)} km`;
+            document.getElementById("km").textContent = `😎${totalDistance.toFixed(1)} km`;
         }, function(error) {
             console.error("Erro ao obter a localização", error);
         });
