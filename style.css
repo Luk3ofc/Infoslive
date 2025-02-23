@@ -1,34 +1,53 @@
-body {
+/* Resetando estilos padrão */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: rgba(0, 0, 0, 0.6);  /* Fundo escuro e com transparência */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: transparent;
-    color: white;
     font-family: Arial, sans-serif;
-    font-size: 5px;
-    text-align: center;
+    color: white;
 }
 
+/* Contêiner principal */
 .container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
 }
 
+/* Relógio */
 .clock-container {
-    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px; /* Diminuir a fonte para caber no quadrado */
+    margin-bottom: 2px; /* Espaço entre elementos */
 }
 
+/* Km */
 .km-container {
-    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px; /* Diminuir a fonte */
+    margin-bottom: 2px;
 }
 
-.weather-container {
-    margin-top: 5px;
-}
-
-.clock, .km, .weather, .temperature {
-    font-size: 36px;
-    font-weight: bold;
+/* Clima e Temperatura */
+.weather-container, .temperature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px; /* Diminuir a fonte */
 }
