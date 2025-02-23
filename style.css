@@ -7,13 +7,14 @@
 
 /* Estilos para o corpo da página */
 body {
-    background-color: rgba(0, 0, 0, 0.6);  /* Fundo escuro e com transparência */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: Arial, sans-serif;
     color: white;
+    background-color: transparent; /* Fundo transparente */
+    overflow: hidden; /* Evita rolagem */
 }
 
 /* Contêiner principal */
