@@ -17,18 +17,18 @@ body {
 }
 
 .clock-container {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .km-container {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .weather-container {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .clock, .km, .weather, .temperature {
-    font-size: 18px;
+    font-size: 36px;
     font-weight: bold;
 }
