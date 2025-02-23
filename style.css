@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.clock-container {
+    margin-bottom: 10px;
+}
+
+.km-container {
+    margin-bottom: 10px;
+}
+
+.weather-container {
+    margin-top: 10px;
+}
+
+.clock, .km, .weather, .temperature {
+    font-size: 48px;
+    font-weight: bold;
+}
