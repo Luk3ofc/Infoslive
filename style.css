@@ -29,6 +29,6 @@ body {
 }
 
 .clock, .km, .weather, .temperature {
-    font-size: 48px;
+    font-size: 18px;
     font-weight: bold;
 }
