@@ -22,32 +22,34 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 10px;
-    height: 10px;
 }
 
-/* Relógio */
-.clock-container {
+/* Clima */
+.weather-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5px; /* Diminuir a fonte para caber no quadrado */
-    margin-bottom: 2px; /* Espaço entre elementos */
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-/* Km */
+/* Quilometragem */
 .km-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5px; /* Diminuir a fonte */
-    margin-bottom: 2px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-/* Clima e Temperatura */
-.weather-container, .temperature-container {
+/* Data e Hora */
+.datetime-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 5px; /* Diminuir a fonte */
+    font-size: 30px;
+}
+
+.date {
+    margin-bottom: 5px;
 }
