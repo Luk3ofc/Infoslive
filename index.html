@@ -1,9 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfosLive</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .weather-container {
+            margin-bottom: 20px;
+        }
+        #clock {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -11,12 +27,14 @@
         <div class="weather-container">
             <div id="weather" class="weather">☁️</div>
             <div id="temperature" class="temperature">--°C</div>
-            <!-- Data e Hora -->
-            <div class="datetime-container">
-    <div id="datetime"></div>
-            </div>
+        </div>
+
+        <!-- Data e Hora -->
+        <div class="datetime-container">
+            <div id="clock">Carregando...</div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
