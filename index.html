@@ -1,44 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfosLive</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        #datetime {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bem-vindo ao InfosLive</h1>
+    <div class="container">
+        <!-- Clima -->
+        <div class="weather-container">
+            <div id="weather" class="weather">☁️</div>
+            <div id="temperature" class="temperature">--°C</div>
+            <!-- Data e Hora -->
+            <div class="datetime-container">
     <div id="datetime"></div>
-
-    <script>
-        function updateDateTime() {
-            const now = new Date();
-            const day = String(now.getDate()).padStart(2, '0');
-            const month = String(now.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!
-            const year = now.getFullYear();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            const formattedDateTime = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
-            document.getElementById('datetime').textContent = formattedDateTime;
-        }
-
-        // Atualiza a cada segundo
-        setInterval(updateDateTime, 1000);
-
-        // Atualiza imediatamente ao carregar a página
-        updateDateTime();
-    </script>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
