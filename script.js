@@ -77,33 +77,7 @@ function updateWeather() {
         });
 }
 
-// Função para atualizar a quilometragem
-function updateKm() {
-    if (navigator.geolocation) {
-        navigator.geolocation.watchPosition(function(position) {
-            const currentPosition = position.coords;
-
-            if (previousPosition) {
-                const distance = calculateDistance(previousPosition.latitude, previousPosition.longitude, currentPosition.latitude, currentPosition.longitude);
-                totalDistance += distance;
-            }
-
-            // Atualiza a posição anterior
-            previousPosition = currentPosition;
-
-            // Atualiza a quilometragem na tela
-            document.getElementById("km").textContent = `😎${totalDistance.toFixed(2)} km`;
-        }, function(error) {
-            console.error("Erro ao obter a localização", error);
-        });
-    } else {
-        alert("Geolocalização não é suportada neste navegador.");
-    }
-}
-
 // Chama as funções logo no início
-updateWeather();
-updateKm();
-setInterval(updateWeather, 60000); // Atualiza o clima a cada 1 minuto
+updateWeather();setInterval(updateWeather, 10000); // Atualiza o clima a cada 10 segundos
 setInterval(updateClock, 1000); // Atualiza o relógio a cada 1 segundo
 updateClock();
