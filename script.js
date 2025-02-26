@@ -5,12 +5,12 @@ function updateClock() {
     const minutes = time.getMinutes().toString().padStart(2, '0');
     const seconds = time.getSeconds().toString().padStart(2, '0');
 
-    // Adicionando o dia, mês e ano
+    // Atualizando a data com dia, mês e ano no formato correto
     const date = time.getDate().toString().padStart(2, '0'); // Dia do mês
     const month = (time.getMonth() + 1).toString().padStart(2, '0'); // Mês
     const year = time.getFullYear(); // Ano
 
-    // Atualizando a data e hora no formato correto
+    // Atualiza a data e hora na tela
     document.getElementById('date').textContent = `${date}/${month}/${year}`;
     document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
 }
