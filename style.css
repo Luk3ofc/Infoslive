@@ -35,6 +35,7 @@ body {
     margin-bottom: 2px; /* Espaço entre elementos */
     color: #ffffff; /* Cor do texto - Branco */
     border: 2px solid rgba(0, 0, 0, 0.5); /* Borda preta translúcida */
+    background-color: rgba(128, 128, 128, 0.4); /* Fundo cinza translúcido */
     padding: 10px;
     border-radius: 10px; /* Borda arredondada */
 }
@@ -47,6 +48,7 @@ body {
     font-size: 50px; /* Tamanho da fonte do clima e temperatura */
     color: #ffffff; /* Cor do texto - Branco */
     border: 2px solid rgba(0, 0, 0, 0.5); /* Borda preta translúcida */
+    background-color: rgba(128, 128, 128, 0.4); /* Fundo cinza translúcido */
     padding: 10px;
     border-radius: 10px; /* Borda arredondada */
 }
@@ -59,6 +61,7 @@ body {
     font-size: 30px; /* Tamanho da fonte da data */
     color: #ffffff; /* Cor do texto - Branco */
     border: 2px solid rgba(0, 0, 0, 0.5); /* Borda preta translúcida */
+    background-color: rgba(128, 128, 128, 0.4); /* Fundo cinza translúcido */
     padding: 10px;
     border-radius: 10px; /* Borda arredondada */
 }
