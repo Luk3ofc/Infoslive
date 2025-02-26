@@ -7,7 +7,7 @@
 
 /* Estilos para o corpo da página */
 body {
-    background-color: rgba(0, 0, 0, 0);  /* Sem fundo */
+    background-color: rgba(0, 0, 0, 0);  /* Fundo completamente transparente */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,30 +26,14 @@ body {
 
 /* Relógio */
 .clock-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 70px; /* Tamanho maior para a hora */
-    margin-bottom: 10px; /* Espaço entre elementos */
-    color: #ffffff; /* Cor do texto - Branco */
-    border: 3px solid rgba(0, 0, 0, 0.5); /* Borda preta translúcida */
-    background-color: rgba(128, 128, 128, 0.4); /* Fundo cinza translúcido */
-    padding: 20px;
-    border-radius: 10px; /* Borda arredondada */
+    margin-bottom: 10px;
 }
 
 /* Clima */
 .weather-container, .temperature-container, .date-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px; /* Tamanho maior para clima e temperatura */
-    color: #ffffff; /* Cor do texto - Branco */
-    border: 3px solid rgba(0, 0, 0, 0.5); /* Borda preta translúcida */
-    background-color: rgba(128, 128, 128, 0.4); /* Fundo cinza translúcido */
-    padding: 20px;
-    border-radius: 10px; /* Borda arredondada */
-    margin-bottom: 10px; /* Espaço entre elementos */
+    font-size: 50px; /* Tamanho maior para clima, temperatura e data */
+    margin-bottom: 10px;
 }
 
 /* Data */
