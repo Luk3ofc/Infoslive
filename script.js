@@ -1,5 +1,3 @@
-let previousPosition = null;
-
 // Função para atualizar o relógio
 function updateClock() {
     const time = new Date();
@@ -14,7 +12,7 @@ function updateClock() {
     const month = (time.getMonth() + 1).toString().padStart(2, '0'); // Mês
     const year = time.getFullYear(); // Ano
 
-    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds} | ${dayOfWeek}, ${date}/${month}/${year}`;
+    document.getElementById('clock').textContent = `${dayOfWeek}, ${date}/${month}/${year} | ${hours}:${minutes}:${seconds}`;
 }
 
 // Função para atualizar a temperatura e o clima
@@ -64,6 +62,7 @@ function updateWeather() {
 }
 
 // Chama as funções logo no início
-updateWeather();setInterval(updateWeather, 10000); // Atualiza o clima a cada 10 segundos
+updateWeather();
+setInterval(updateWeather, 10000); // Atualiza o clima a cada 10 segundos
 setInterval(updateClock, 1000); // Atualiza o relógio a cada 1 segundo
 updateClock();
