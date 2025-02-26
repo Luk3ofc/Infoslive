@@ -22,8 +22,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 10px;
-    height: 10px;
 }
 
 /* Relógio */
@@ -32,16 +30,16 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 50px; /* Tamanho da fonte do relógio */
-    margin-bottom: 2px; /* Espaço entre elementos */
+    margin-bottom: 10px; /* Espaço entre elementos */
     color: #ffffff; /* Cor do texto - Branco */
     border: 2px solid rgba(0, 0, 0, 0.5); /* Borda preta translúcida */
     background-color: rgba(128, 128, 128, 0.4); /* Fundo cinza translúcido */
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px; /* Borda arredondada */
 }
 
 /* Clima */
-.weather-container, .temperature-container {
+.weather-container, .temperature-container, .date-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,19 +47,12 @@ body {
     color: #ffffff; /* Cor do texto - Branco */
     border: 2px solid rgba(0, 0, 0, 0.5); /* Borda preta translúcida */
     background-color: rgba(128, 128, 128, 0.4); /* Fundo cinza translúcido */
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px; /* Borda arredondada */
+    margin-bottom: 10px; /* Espaço entre elementos */
 }
 
 /* Data */
 .date-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px; /* Tamanho da fonte da data */
-    color: #ffffff; /* Cor do texto - Branco */
-    border: 2px solid rgba(0, 0, 0, 0.5); /* Borda preta translúcida */
-    background-color: rgba(128, 128, 128, 0.4); /* Fundo cinza translúcido */
-    padding: 10px;
-    border-radius: 10px; /* Borda arredondada */
+    font-size: 40px; /* Tamanho da fonte da data */
 }
