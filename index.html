@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Quilômetros</title>
+    <title>InfosLive</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .weather-container {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <!-- Clima -->
         <div class="weather-container">
-            <div id="weather" class="weather">☁️</div>
-            <div id="temperature" class="temperature">--°C</div>
-        </div>
-
-        <!-- Data e Hora -->
-        <div class="datetime-container">
-            <div id="date" class="date">--/--/----</div>
-            <div id="clock" class="clock">--:--:--</div>
+            <span id="weather">☁️</span> 
+            <span id="temperature">--°C</span>
         </div>
     </div>
 
