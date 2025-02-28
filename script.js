@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const temperatureContainer = document.getElementById('temperature');
 
     function updateWeather() {
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=Vitória de Santo Antão&appid=${apiKey}&units=metric&lang=pt_br`;
+        // Coordenadas exatas de Vitória de Santo Antão
+        const lat = -8.1181;
+        const lon = -35.2974;
+        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=pt_br`;
 
         fetch(url)
             .then(response => {
