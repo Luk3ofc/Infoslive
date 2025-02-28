@@ -31,6 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
                     } else {
                         weatherContainer.textContent = "☁️";
                     }
+
+                    // Checa a hora do dia e muda o emoji para dia ou noite
+                    const currentHour = new Date().getHours();
+                    if (currentHour >= 6 && currentHour < 18) {
+                        // Durante o dia
+                        weatherContainer.textContent = "🌞";
+                    } else {
+                        // Durante a noite
+                        weatherContainer.textContent = "🌙";
+                    }
                 }
             })
             .catch(error => {
