@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     const apiKey = "b7c20a70b3eef18f479eb62d2beb14f2"; // Chave da API
+    const city = "Vitória de Santo Antão";
+    const state = "PE";
+    const country = "BR"; // Brasil
     const weatherContainer = document.getElementById('weather');
     const temperatureContainer = document.getElementById('temperature');
 
     function updateWeather() {
-        // Coordenadas exatas de Vitória de Santo Antão
-        const lat = -8.1181;
-        const lon = -35.2974;
-        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=pt_br`;
+        // URL da API com cidade, estado e país especificados
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${state},${country}&appid=${apiKey}&units=metric&lang=pt_br`;
 
         fetch(url)
             .then(response => {
@@ -35,11 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Checa a hora do dia e muda o emoji para dia ou noite
                     const currentHour = new Date().getHours();
                     if (currentHour >= 6 && currentHour < 18) {
-                        // Durante o dia
-                        weatherContainer.textContent = "🌞";
+                        weatherContainer.textContent = "🌞"; // Dia
                     } else {
-                        // Durante a noite
-                        weatherContainer.textContent = "🌙";
+                        weatherContainer.textContent = "🌙"; // Noite
                     }
                 }
             })
